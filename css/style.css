@@ -1,0 +1,140 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family:'poppins' ,sans-serif;
+}
+
+
+:root{
+    --pry :#F5F7F8;
+    --scr :#ffc107;
+    --grn: #495E57;
+    --blu: #45474B;
+}
+
+body{
+    background-color: fff;
+}
+button {
+    background-color: var(--gry);
+    color:#fff;
+
+}
+.navbar{
+    transition: all .3s ease ;
+    -webkit-transition: all .3s ease ;
+    -moz-transition: all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition :all .3s ease;
+}
+.navbar.Scrolling-active{
+    background-color:var(--scr);
+    padding: 15px 0;
+    /* box-shadow: 0px 3px 10px  rgba(0,0,0,.12); */
+
+
+}
+.navbar-brand{
+    text-shadow: 0 3px 3px rgba(0,0,0,0.12);
+}
+
+.herro{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url(../assets/img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.herro h1{
+    --animate-delay:0.7s;
+}
+
+.herro p{
+    --animate-delay:1.4s;
+}
+
+.herro button{
+    --animate-delay:2s;
+}
+
+.about .row .col:nth-child(1){
+    background-color: #222;
+
+}
+.navbar i{
+
+    cursor:pointer;
+    color:#fff;
+    transition:all .1s;
+}
+.navbar i:hover{
+    color: #efe;
+}
+
+.projects{
+    padding:100px 0;
+}
+.projects img{
+    height: 250px;
+}
+.service img{
+    width: 250px;
+    height: 400px;
+}
+.service h5{
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.service i{
+    color: green;
+    font-size: 30px;
+
+}
+
+@media screen and (max-width:1200px) {
+    .service img{
+        width: 220px ;
+    }
+    
+}
+
+.FAQ{
+    padding-top: 100px;
+}
+
+.FAQ .accordion {
+    --bs-accordion-bg:#e9edc9;
+}
+
+.FAQ .accordion-button {
+    background-color: #e9edc9;
+    box-shadow: none;
+}
+
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow:none;
+}
+
+
+.footer{
+    min-height: 60vh;
+    background-color: #15181f;
+    margin-top: 150px;
+}
+
+.copyright{
+    padding-top: 100px;
+}
